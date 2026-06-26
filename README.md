@@ -92,7 +92,7 @@ npm start
 
 Opções do menu:
 
-1. **Modo demonstração** — passo a passo (ideal para apresentação)
+1. **Modo demonstração**
 2. Compilar arquivo `.iugo`
 3. Digitar código inline
 4. Exemplos prontos
@@ -230,9 +230,3 @@ Roteiro sugerido para demo ao vivo:
 - **Visitor Pattern** — percurso da AST (semântica, otimizador, codegen)
 - **Node.js** — execução da CLI e do JavaScript gerado
 
----
-
-## Licença
-
-ISC
-# projeto-iugoCompiler
