@@ -1,24 +1,18 @@
-# ── Dependências ────────────────────────────────────────────────────────────
 node_modules/
 web/node_modules/
 
-# ── Build / saída gerada ──────────────────────────────────────────────────────
 dist/
 web/dist/
 *.tsbuildinfo
 
-# JS gerado pelo compilador (recriado com npm run build + compilar)
 dist/output.js
 
-# Cache do Vite
 web/.vite/
 
-# ── Variáveis de ambiente ─────────────────────────────────────────────────────
 .env
 .env.*
 !.env.example
 
-# ── Logs ──────────────────────────────────────────────────────────────────────
 logs/
 *.log
 npm-debug.log*
@@ -26,7 +20,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# ── Sistema operacional ───────────────────────────────────────────────────────
 .DS_Store
 .DS_Store?
 ._*
@@ -36,7 +29,6 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# ── IDEs e editores ─────────────────────────────────────────────────────────
 .idea/
 .vscode/*
 !.vscode/extensions.json
@@ -48,14 +40,12 @@ Desktop.ini
 .classpath
 .settings/
 
-# ── Testes (Playwright / coverage) ───────────────────────────────────────────
 coverage/
 test-results/
 playwright-report/
 playwright/.cache/
 blob-report/
 
-# ── Temporários ───────────────────────────────────────────────────────────────
 tmp/
 temp/
 *.tmp
