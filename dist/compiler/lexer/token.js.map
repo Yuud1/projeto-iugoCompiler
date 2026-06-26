@@ -1,0 +1,1 @@
+{"version":3,"file":"token.js","sourceRoot":"","sources":["../../../src/compiler/lexer/token.ts"],"names":[],"mappings":";AAAA;;;;;;;;;;;;;GAaG;;AAeH,kCAOC;AAXD;;;GAGG;AACH,SAAgB,WAAW,CACzB,IAAiB,EACjB,KAAc,EACd,IAAc,EACd,MAAc;IAEd,OAAO,EAAE,IAAI,EAAE,KAAK,EAAE,IAAI,EAAE,MAAM,EAAE,CAAC;AACvC,CAAC"}

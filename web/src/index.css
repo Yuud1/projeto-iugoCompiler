@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── VS Code exact color variables ───────────────────────────────────────── */
+:root {
+  --vsc-titlebar:       #3c3c3c;
+  --vsc-actbar:         #333333;
+  --vsc-actbar-icon:    #858585;
+  --vsc-actbar-active:  #ffffff;
+  --vsc-sidebar:        #252526;
+  --vsc-sidebar-hdr:    #252526;
+  --vsc-editor:         #1e1e1e;
+  --vsc-tab-bar:        #252526;
+  --vsc-tab-active-bg:  #1e1e1e;
+  --vsc-tab-inactive:   #2d2d2d;
+  --vsc-tab-active-fg:  #ffffff;
+  --vsc-tab-inactive-fg:#8d8d8d;
+  --vsc-tab-border:     #252526;
+  --vsc-panel:          #1e1e1e;
+  --vsc-panel-tab-bar:  #252526;
+  --vsc-statusbar:      #007acc;
+  --vsc-statusbar-fg:   #ffffff;
+  --vsc-border:         #474747;
+  --vsc-border-light:   #3c3c3c;
+  --vsc-text:           #cccccc;
+  --vsc-text-dim:       #8d8d8d;
+  --vsc-text-bright:    #e8e8e8;
+  --vsc-hover:          #2a2d2e;
+  --vsc-selected:       #094771;
+  --vsc-accent:         #0078d4;
+  --vsc-green:          #4ec9b0;
+  --vsc-yellow:         #dcdcaa;
+  --vsc-blue:           #569cd6;
+  --vsc-purple:         #c586c0;
+  --vsc-orange:         #ce9178;
+  --vsc-red:            #f44747;
+  --vsc-input-bg:       #3c3c3c;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { height: 100%; overflow: hidden; }
+
+body {
+  background: var(--vsc-editor);
+  color: var(--vsc-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Scrollbar ────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar          { width: 10px; height: 10px; }
+::-webkit-scrollbar-track    { background: transparent; }
+::-webkit-scrollbar-thumb    { background: #424242; border: 2px solid transparent; background-clip: padding-box; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #555; border: 2px solid transparent; background-clip: padding-box; border-radius: 5px; }
+
+/* ── VS Code tree indent guide ────────────────────────────────────────────── */
+.tree-item { display: flex; align-items: center; height: 22px; cursor: pointer; user-select: none; padding-left: 0; white-space: nowrap; }
+.tree-item:hover { background: var(--vsc-hover); }
+.tree-item.active { background: var(--vsc-selected); color: #fff; }
+
+/* ── Sidebar section header ───────────────────────────────────────────────── */
+.sidebar-section-hdr {
+  display: flex; align-items: center; gap: 4px;
+  padding: 0 8px; height: 22px;
+  font-size: 11px; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--vsc-text);
+  cursor: pointer; user-select: none;
+}
+.sidebar-section-hdr:hover { background: var(--vsc-hover); }
+
+/* Pipeline — várias linhas por fase (não usar .tree-item) */
+.pipeline-phase-row {
+  display: flex;
+  align-items: flex-start;
+  padding: 6px 12px 6px 16px;
+  cursor: default;
+  user-select: none;
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.4;
+}
+.pipeline-phase-row:hover { background: var(--vsc-hover); }
+.pipeline-opt-line {
+  padding: 4px 16px 4px 24px;
+  font-size: 10px;
+  color: #dcdcaa;
+  line-height: 1.45;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* ── Token colors ─────────────────────────────────────────────────────────── */
+.tok-keyword  { color: #c586c0; }
+.tok-ident    { color: #9cdcfe; }
+.tok-number   { color: #b5cea8; }
+.tok-string   { color: #ce9178; }
+.tok-operator { color: #d4d4d4; }
+.tok-symbol   { color: #808080; }
+.tok-unknown  { color: #f44747; }
+
+/* ── IR / TAC instruction colors ─────────────────────────────────────────── */
+.ir-label   { color: #dcdcaa; font-weight: 700; }
+.ir-jump    { color: #c586c0; }
+.ir-branch  { color: #c586c0; }
+.ir-op      { color: #9cdcfe; }
+.ir-assign  { color: #d4d4d4; }
+.ir-print   { color: #4ec9b0; }
+
+/* ── AST node colors ──────────────────────────────────────────────────────── */
+.ast-program  { color: #c586c0; }
+.ast-vardecl  { color: #9cdcfe; }
+.ast-assign   { color: #ce9178; }
+.ast-print    { color: #dcdcaa; }
+.ast-if       { color: #c586c0; }
+.ast-while    { color: #c586c0; }
+.ast-block    { color: #808080; }
+.ast-binexpr  { color: #d4d4d4; }
+.ast-unexpr   { color: #d4d4d4; }
+.ast-ident    { color: #9cdcfe; }
+.ast-number   { color: #b5cea8; }
+.ast-string   { color: #ce9178; }
+.ast-bool     { color: #569cd6; }

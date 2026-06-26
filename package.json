@@ -1,0 +1,26 @@
+{
+  "name": "iugo-compiler",
+  "version": "0.4.0",
+  "description": "Mini compilador acadêmico para a linguagem iuGo, desenvolvido em TypeScript.",
+  "main": "dist/cli/index.js",
+  "bin": {
+    "iugo": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/cli/index.ts",
+    "dev": "ts-node src/cli/index.ts",
+    "demo": "ts-node src/cli/index.ts --demo",
+    "demo:idade": "ts-node src/cli/index.ts --demo --file examples/idade.iugo",
+    "compile": "ts-node src/cli/index.ts --file",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["compiler", "lexer", "parser", "typescript", "academic"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

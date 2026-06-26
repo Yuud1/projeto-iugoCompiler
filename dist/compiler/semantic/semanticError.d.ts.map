@@ -1,0 +1,1 @@
+{"version":3,"file":"semanticError.d.ts","sourceRoot":"","sources":["../../../src/compiler/semantic/semanticError.ts"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;GAaG;AAEH,qBAAa,aAAc,SAAQ,KAAK;aAGpB,IAAI,EAAE,MAAM;aACZ,MAAM,EAAE,MAAM;gBAF9B,OAAO,EAAE,MAAM,EACC,IAAI,EAAE,MAAM,EACZ,MAAM,EAAE,MAAM;CAKjC"}
